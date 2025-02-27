@@ -31,6 +31,17 @@ body {
   padding: 30px;
 }
 
+.container:hover {
+  /*background: #111; */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 10);
+
+  transition: box-shadow 1000ms linear;
+}
+
+.container:hover {
+  background: #111;
+}
+
 /* Header styling */
 header {
   text-align: center;
@@ -80,6 +91,18 @@ pinkParagraph {
   margin-bottom: 20px;
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
   text-align: left; /* ensure text is left aligned */
+}
+
+.team:hover {
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 5);
+
+  animation: colorTest;
+
+  border-radius: 5px;
+  
+  transition: box-shadow 200ms linear, border-radius 300ms linear;
+
+
 }
 
 .team h3 {
