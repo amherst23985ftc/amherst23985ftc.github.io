@@ -15,7 +15,7 @@ body {
   f8d3e0
   */
   
-  background: #fadee8; /* lighter background for better contrast */
+  background: #fadee8; 
   color: #222;
   line-height: 1.6;
   padding: 20px;
@@ -126,7 +126,7 @@ testTitle {
   100% { color: #ff00dd; }
 }
 
-/* In your style.css file */
+
 header {
   display: flex;
   flex-direction: column; /* Stack the image and titles vertically */
