@@ -118,3 +118,15 @@ testTitle {
   50% { color: #6b2e69; }
   100% { color: #ff00dd; }
 }
+
+header {
+  display: flex;
+  align-items: center; /* Aligns items vertically centered */
+}
+
+header .logo {
+  width: 50px; /* Adjust size of the logo as needed */
+  height: auto;
+  margin-right: 10px; /* Space between the logo and the title */
+}
+
