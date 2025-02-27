@@ -1,0 +1,120 @@
+/* Import the Roboto font */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+/* Reset default spacing */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Overall page styling */
+body {
+  font-family: 'Roboto', sans-serif;
+  background: #ebc5d2; /* lighter background for better contrast */
+  color: #222;
+  line-height: 1.6;
+  padding: 20px;
+}
+
+/* Centered container for content */
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  background: #670d23;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  padding: 30px;
+}
+
+/* Header styling */
+header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+h1 {
+  font-size: 3em;
+  color: #ebc5d2; /* dark gray for contrast */
+  margin-bottom: 10px;
+}
+
+h2 {
+  font-size: 1.8em;
+  color: #ebc5d2;
+}
+
+/* Paragraph styling */
+p {
+  font-size: 1.1em;
+  margin-bottom: 20px;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  
+}
+
+pinkParagraph {
+  font-size: 1.1em;
+  margin-bottom: 20px;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  color: #ebc5d2;
+}
+
+
+
+
+/* Team section styling */
+.team {
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  text-align: left; /* ensure text is left aligned */
+}
+
+.team h3 {
+  color: #000;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.team ul {
+  list-style: none;
+  padding-left: 20px; /* add padding for alignment */
+}
+
+.team li {
+  font-size: 1.1em;
+  padding: 8px 0;
+  border-bottom: 1px solid #eee;
+}
+
+/* Remove border for the last list item */
+.team li:last-child {
+  border-bottom: none;
+}
+
+/* Horizontal rule styling */
+hr {
+  border: none;
+  height: 2px;
+  background: #ddd;
+  width: 20%;
+  margin: 20px auto;
+}
+
+testTitle {
+  font-family: monospace;
+  font-size: 3em;
+  animation: color-change 1s infinite;
+}
+
+@keyframes color-change {
+  0% { color: #ee00ff; }
+  50% { color: #6b2e69; }
+  100% { color: #ff00dd; }
+}
