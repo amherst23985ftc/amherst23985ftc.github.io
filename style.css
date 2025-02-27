@@ -38,9 +38,6 @@ body {
   transition: box-shadow 1000ms linear;
 }
 
-.container:hover {
-  background: #111;
-}
 
 /* Header styling */
 header {
