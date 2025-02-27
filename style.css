@@ -11,7 +11,9 @@
 /* Overall page styling */
 body {
   font-family: 'Roboto', sans-serif;
-  background: #ebc5d2; /* lighter background for better contrast */
+  /*ebc5d2*/
+  
+  background: #f8d3e0; /* lighter background for better contrast */
   color: #222;
   line-height: 1.6;
   padding: 20px;
