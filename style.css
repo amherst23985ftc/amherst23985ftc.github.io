@@ -41,11 +41,13 @@ h1 {
   font-size: 3em;
   color: #ebc5d2; /* dark gray for contrast */
   margin-bottom: 10px;
+  margin: 10px 0; /* Adds space above and below the h1 */
 }
 
 h2 {
   font-size: 1.8em;
   color: #ebc5d2;
+  margin: 5px 0; /* Adds space above and below the h2 */
 }
 
 /* Paragraph styling */
@@ -124,14 +126,24 @@ testTitle {
   100% { color: #ff00dd; }
 }
 
+/* In your style.css file */
 header {
   display: flex;
-  align-items: center; /* Aligns items vertically centered */
+  flex-direction: column; /* Stack the image and titles vertically */
+  align-items: center; /* Center-align the content */
+  text-align: center; /* Make the text centered */
+  justify-content: center; /* Optional: vertically center the content */
 }
 
 header .logo {
+  display: block;
   width: 10%; /* Adjust size of the logo as needed */
   height: auto;
   margin-right: 10px; /* Space between the logo and the title */
+  margin-bottom: 10px;
+}
+
+h1, h2 {
+  margin: 0; /* Remove default margin to prevent spacing issues */
 }
 
