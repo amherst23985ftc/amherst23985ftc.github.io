@@ -91,6 +91,7 @@ pinkParagraph {
   font-size: 1.1em;
   padding: 8px 0;
   border-bottom: 1px solid #eee;
+  font-family: 'Roboto', sans-serif;
 }
 
 /* Remove border for the last list item */
