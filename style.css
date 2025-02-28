@@ -11,8 +11,11 @@
 /* Overall page styling */
 body {
   font-family: 'Roboto', sans-serif;
-  background: #ebc5d2;
-  /* lighter background for better contrast */
+  /*ebc5d2
+  f8d3e0
+  */
+  
+  background: #fadee8; 
   color: #222;
   line-height: 1.6;
   padding: 20px;
@@ -24,7 +27,7 @@ body {
   margin: 0 auto;
   background: #670d23;
   border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
   padding: 30px;
 }
 
@@ -41,6 +44,7 @@ body {
   transition: box-shadow 1000ms linear;
 }
 
+
 /* Header styling */
 header {
   text-align: center;
@@ -49,14 +53,15 @@ header {
 
 h1 {
   font-size: 3em;
-  color: #ebc5d2;
-  /* dark gray for contrast */
+  color: #ebc5d2; /* dark gray for contrast */
   margin-bottom: 10px;
+  margin: 10px 0; /* Adds space above and below the h1 */
 }
 
 h2 {
   font-size: 1.8em;
   color: #ebc5d2;
+  margin: 5px 0; /* Adds space above and below the h2 */
 }
 
 /* Paragraph styling */
@@ -66,7 +71,7 @@ p {
   max-width: 800px;
   margin-left: auto;
   margin-right: auto;
-
+  
 }
 
 pinkParagraph {
@@ -87,20 +92,20 @@ pinkParagraph {
   padding: 20px;
   border-radius: 8px;
   margin-bottom: 20px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  text-align: left;
-  /* ensure text is left aligned */
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  text-align: left; /* ensure text is left aligned */
 }
 
 .team:hover {
-  /*box-shadow: 0 2px 5px rgba(0, 0, 0, 5);*/
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 5);
 
-  border-radius: 20px;
+  animation: colorTest;
 
-  width: 20%;
+  border-radius: 5px;
   
-  transition: border-radius 500ms linear;
-  
+  transition: box-shadow 200ms linear, border-radius 300ms linear;
+
+
 }
 
 .team:not(:hover){
@@ -111,7 +116,6 @@ pinkParagraph {
   transition: border-radius 500ms linear;
 }
 
-
 .team h3 {
   color: #000;
   margin-bottom: 15px;
@@ -120,14 +124,14 @@ pinkParagraph {
 
 .team ul {
   list-style: none;
-  padding-left: 20px;
-  /* add padding for alignment */
+  padding-left: 20px; /* add padding for alignment */
 }
 
 .team li {
   font-size: 1.1em;
   padding: 8px 0;
   border-bottom: 1px solid #eee;
+  font-family: 'Roboto', sans-serif;
 }
 
 /* Remove border for the last list item */
@@ -144,40 +148,36 @@ hr {
   margin: 20px auto;
 }
 
-.testTitle {
+testTitle {
   font-family: monospace;
   font-size: 3em;
   animation: color-change 1s infinite;
 }
 
-
-.gfm-embed:hover {
-  background: #297;
-  /*
-  -webkit-transition: background 1000ms linear;
-  -ms-transition: background 1000ms linear;
-  transition: background 1000ms linear;
-  
-  animation: colorTest;
-
-  */
-
-}
-
-
 @keyframes color-change {
-  0% {
-    color: #ee00ff;
-  }
-  50% {
-    color: #6b2e69;
-  }
-  100% {
-    color: #ff00dd;
-  }
+  0% { color: #ee00ff; }
+  50% { color: #6b2e69; }
+  100% { color: #ff00dd; }
 }
 
-@keyframes colorTest {
-  0% {background: red;}
-  100% {background: blue;}
+
+header {
+  display: flex;
+  flex-direction: column; /* Stack the image and titles vertically */
+  align-items: center; /* Center-align the content */
+  text-align: center; /* Make the text centered */
+  justify-content: center; /* Optional: vertically center the content */
 }
+
+header .logo {
+  display: block;
+  width: 10%; /* Adjust size of the logo as needed */
+  height: auto;
+  margin-right: 10px; /* Space between the logo and the title */
+  margin-bottom: 10px;
+}
+
+h1, h2 {
+  margin: 0; /* Remove default margin to prevent spacing issues */
+}
+
