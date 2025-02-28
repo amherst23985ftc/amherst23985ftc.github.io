@@ -35,13 +35,13 @@ body {
   /*background: #111; */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 10);
 
-  transition: box-shadow 1000ms linear;
+  transition: box-shadow 500ms linear;
 }
 
 .container:not(:hover) {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 
-  transition: box-shadow 1000ms linear;
+  transition: box-shadow 500ms linear;
 }
 
 
@@ -103,7 +103,7 @@ pinkParagraph {
 
   border-radius: 20px;
   
-  transition: box-shadow 200ms linear, border-radius 300ms linear;
+  transition: border-radius 200ms linear;
 
 
 }
@@ -113,7 +113,7 @@ pinkParagraph {
 
   border-radius: 8px;
 
-  transition: border-radius 500ms linear;
+  transition: border-radius 200ms linear;
 }
 
 .team h3 {
