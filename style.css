@@ -101,7 +101,7 @@ pinkParagraph {
 
   animation: colorTest;
 
-  border-radius: 5px;
+  border-radius: 20px;
   
   transition: box-shadow 200ms linear, border-radius 300ms linear;
 
