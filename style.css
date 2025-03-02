@@ -29,7 +29,7 @@ body {
   background: #670d23;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-  padding: 10 px;
+  padding: 30 px;
 }
 
 .container:hover {
@@ -87,7 +87,17 @@ p {
   display; block;
 }
 
-
+l {
+  font-size: 1.1em;
+  margin-bottom: 20px;
+  max-width: 70%;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  color: #ebc5d2;
+  text-align: center;
+  display; block;
+}
 
 
 /* Team section styling */
