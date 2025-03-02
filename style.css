@@ -80,11 +80,10 @@ p {
   margin-bottom: 20px;
   max-width: 70%;
   width: 100%;
-  margin-left: auto;
-  margin-right: auto;
+  margin-left: 0;
+  margin-right: 0;
   color: #ebc5d2;
   text-align: center;
-  font-stretch: expanded;
 }
 
 
