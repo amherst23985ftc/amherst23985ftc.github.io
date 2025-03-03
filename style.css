@@ -76,7 +76,7 @@ p {
 }
 
 
-headerInfoTxt {
+.headerInfoTxt {
   font-size: 1.1em;
   margin-bottom: 20px;
   max-width: 70%;
@@ -109,11 +109,11 @@ headerInfoTxt {
   text-align: left; /* ensure text is left aligned */
 
   width: 40%;
-  height: 40%;
+  height: auto; /* Auto height instead of fixed percentage */
 
-  position: absolute;
-  /*left: 20%;*/
-  top: 30%;
+  position: relative; /* Change from absolute to relative */
+  margin: 20px auto; /* Center it horizontally */
+  padding: 15px; /* Add some padding */
   
 }
 
