@@ -112,8 +112,11 @@ headerInfoTxt {
   height: auto; /* Auto height instead of fixed percentage */
 
   position: relative; /* Change from absolute to relative */
-  margin: 20px auto; /* Center it horizontally */
+  /*margin: 20px auto; /* Center it horizontally */ 
   padding: 15px; /* Add some padding */
+
+  margin-left: 5%; /* Smaller left margin moves it more left */
+  margin-right: auto; /* Pushes it away from the right */
   
 }
 
