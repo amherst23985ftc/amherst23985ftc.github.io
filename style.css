@@ -114,9 +114,12 @@ headerInfoTxt {
   position: relative; /* Change from absolute to relative */
   /*margin: 20px auto; /* Center it horizontally */ 
   padding: 15px; /* Add some padding */
-
-  margin-left: 20px; /* Smaller left margin moves it more left */
-  margin-right: auto; /* Pushes it away from the right */
+  
+  /*margin-left: 20px; /* Smaller left margin moves it more left */
+  /*margin-right: auto; /* Pushes it away from the right */
+  
+  left: 0;
+  
   
 }
 
