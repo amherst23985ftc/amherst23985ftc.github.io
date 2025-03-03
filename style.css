@@ -156,6 +156,18 @@ headerInfoTxt {
   padding-left: 20px; /* add padding for alignment */
 }
 
+.infoBlurbOutreach ul{
+  list-style: none;
+  padding-left: 20px; /* add padding for alignment */
+}
+
+.infoBlurbOutreach li{
+  font-size: 1.1em;
+  padding: 8px 0;
+  border-bottom: 1px solid #eee;
+  font-family: 'Roboto', sans-serif;
+}
+
 .team li {
   font-size: 1.1em;
   padding: 8px 0;
