@@ -101,37 +101,34 @@ headerInfoTxt {
 }
 
 
-.infoBlurbOutreach {
-  background: #fff;
-  /*display: flex;*/
-  border-radius: 8px;
-  margin-bottom: 20px;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-  text-align: left; /* ensure text is left aligned */
-
-  width: 40%;
-  height: auto; /* Auto height instead of fixed percentage */
-
-  position: relative; /* Change from absolute to relative */
-  /*margin: 20px auto; /* Center it horizontally */ 
-  padding: 15px; /* Add some padding */
-  
-  /*margin-left: 20px; /* Smaller left margin moves it more left */
-  /*margin-right: auto; /* Pushes it away from the right */
-  
-  left: 0;
-
+.outreachContainer {
+  display: flex; /* Makes .infoBlurbOutreach and .outreachPhotos sit next to each other */
+  justify-content: space-between; /* Even spacing */
+  align-items: flex-start; /* Aligns items to the top */
+  gap: 20px; /* Adds space between the text and images */
+  width: 100%; /* Ensures full width */
 }
 
-infoBlurbOutreach .outreachPhoto1{
+.infoBlurbOutreach {
+  width: 45%; /* Adjust width to fit content */
+  max-width: 500px; /* Limit width */
+}
 
-    display: block;
-    width: 0.1;
-    height: auto;
+.outreachPhotos {
+  width: 45%; /* Make sure the image section takes up the same amount of space */
+  max-width: 500px; /* Set a max width */
+  display: flex;
+  flex-wrap: wrap; /* Allows images to wrap to the next row if necessary */
+  justify-content: center; /* Centers images inside */
+  gap: 10px; /* Adds spacing between images */
+}
 
-    position: relative;
-    right: 0;
-
+.outreachPhotos img {
+  width: 100%; /* Makes images fill the width of their container */
+  max-width: 200px; /* Limits the size */
+  height: auto; /* Keeps aspect ratio */
+  border-radius: 8px; /* Optional: rounded corners */
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Optional: adds a slight shadow */
 }
 
 /*
