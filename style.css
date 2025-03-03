@@ -107,8 +107,17 @@ headerInfoTxt {
   margin-bottom: 20px;
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
   text-align: left; /* ensure text is left aligned */
+
+  width: 40%;
+  height: 40%;
+
+  position: absolute;
+  left: 20%;
+  top: 30%;
+  
 }
 
+/*
 .team:hover {
   box-shadow: 0 2px 5px rgba(0, 0, 0, 5);
 
@@ -122,12 +131,13 @@ headerInfoTxt {
 }
 
 .team:not(:hover){
-  /*box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);*/
+  
 
   border-radius: 8px;
 
   transition: border-radius 100ms linear;
 }
+*/
 
 .team h3 {
   color: #000;
