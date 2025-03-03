@@ -115,7 +115,7 @@ headerInfoTxt {
   /*margin: 20px auto; /* Center it horizontally */ 
   padding: 15px; /* Add some padding */
 
-  margin-left: 5%; /* Smaller left margin moves it more left */
+  margin-left: 30px; /* Smaller left margin moves it more left */
   margin-right: auto; /* Pushes it away from the right */
   
 }
