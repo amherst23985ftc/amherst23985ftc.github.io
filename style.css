@@ -169,6 +169,12 @@ headerInfoTxt {
   font-family: 'Roboto', sans-serif;
 }
 
+.infoBlurbOutreach h3{
+  color: #000;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
 .team li {
   font-size: 1.1em;
   padding: 8px 0;
