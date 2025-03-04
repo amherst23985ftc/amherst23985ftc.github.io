@@ -253,6 +253,16 @@ hr {
   margin: 20px auto;
 }
 
+hr.sectionDivider{
+
+    border: none;
+    height: 5px;
+    background: #FFFFFF;
+    width: 20%;
+    margin: 20px auto;
+
+}
+
 testTitle {
   font-family: monospace;
   font-size: 3em;
