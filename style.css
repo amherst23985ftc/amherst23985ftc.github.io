@@ -220,11 +220,14 @@ img:hover{
     transition: width 100ms linear, height 100ms linear;
 }
 
-img:not(hover){
-        width: 100%;
-        height: auto;
 
-        transition: width 100ms linear, height 100ms linear;
+img:not(:hover){
+
+
+    width: 50%;
+    height: auto;
+    max-width: 400px;
+    transition: width 100ms linear, height 100ms linear;
 
 }
 
