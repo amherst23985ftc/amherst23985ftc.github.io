@@ -143,6 +143,8 @@ headerInfoTxt {
   height: auto; /* Keeps aspect ratio */
   border-radius: 8px; /* Optional: rounded corners */
   box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Optional: adds a slight shadow */
+
+  margin: 10;
 }
 
 .outreachPhotos img2 {
@@ -151,6 +153,8 @@ headerInfoTxt {
   height: auto; /* Keeps aspect ratio */
   border-radius: 8px; /* Optional: rounded corners */
   box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Optional: adds a slight shadow */
+
+  margin: 10;
 }
 
 .outreachPhotos img3
@@ -159,6 +163,8 @@ headerInfoTxt {
   height: auto; /* Keeps aspect ratio */
   border-radius: 8px; /* Optional: rounded corners */
   box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Optional: adds a slight shadow */
+
+  margin: 10;
 }
 
 /*
