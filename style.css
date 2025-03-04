@@ -138,7 +138,7 @@ headerInfoTxt {
   margin-bottom: 10px;
 }
 
-.outreachPhotos img2 {
+.outreachPhotos img {
   width: 50%; /* Makes images fill the width of their container */
 
   max-width: 200px; /* Limits the size */
@@ -151,7 +151,7 @@ headerInfoTxt {
 
 
 
-.outreachPhotos img {
+.outreachPhotos img2 {
   max-width: 200px; /* Maximum width */
   max-height: 150px; /* Maximum height to prevent overly tall images */
   width: auto; /* Ensures width scales properly */
@@ -163,9 +163,10 @@ headerInfoTxt {
 
 
 img:hover{
-    width: 200%;
+    width: 100%;
     height: auto;
 
+    max-width: 400px;
     transition: width 100ms linear, height 100ms linear;
 }
 
