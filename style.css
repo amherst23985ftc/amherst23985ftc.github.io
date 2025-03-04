@@ -138,7 +138,7 @@ headerInfoTxt {
   margin-bottom: 10px;
 }
 
-.outreachPhotos img1 {
+.outreachPhotos img {
   width: 100%; /* Makes images fill the width of their container */
   max-width: 200px; /* Limits the size */
   height: auto; /* Keeps aspect ratio */
