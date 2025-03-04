@@ -90,6 +90,7 @@ headerInfoTxt {
 }
 
 
+
 /* Team section styling */
 .team {
   background: #fff;
@@ -136,7 +137,23 @@ headerInfoTxt {
   gap: 10px; /* Adds spacing between images */
 }
 
-.outreachPhotos img {
+.outreachPhotos img1 {
+  width: 100%; /* Makes images fill the width of their container */
+  max-width: 200px; /* Limits the size */
+  height: auto; /* Keeps aspect ratio */
+  border-radius: 8px; /* Optional: rounded corners */
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Optional: adds a slight shadow */
+}
+
+.outreachPhotos img2 {
+  width: 100%; /* Makes images fill the width of their container */
+  max-width: 200px; /* Limits the size */
+  height: auto; /* Keeps aspect ratio */
+  border-radius: 8px; /* Optional: rounded corners */
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Optional: adds a slight shadow */
+}
+
+.outreachPhotos img3
   width: 100%; /* Makes images fill the width of their container */
   max-width: 200px; /* Limits the size */
   height: auto; /* Keeps aspect ratio */
