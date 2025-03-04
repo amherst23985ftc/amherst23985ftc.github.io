@@ -110,23 +110,52 @@ headerInfoTxt {
   width: 100%; /* Ensures full width */
 }
 
+.fundraisingContainer {
+  display: flex; /* Makes .infoBlurbOutreach and .outreachPhotos sit next to each other */
+  justify-content: space-between; /* Even spacing */
+  align-items: flex-start; /* Aligns items to the top */
+  gap: 20px; /* Adds space between the text and images */
+  width: 100%; /* Ensures full width */
+}
+
 .infoBlurbOutreach {
 
   /*width: 45%; /* Adjust width to fit content */
   /*max-width: 500px; /* Limit width */
 
-
+  padding: 15px;
   background: #fff;
-    /*display: flex;*/
-    border-radius: 8px;
-    margin-bottom: 20px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    text-align: left; /* ensure text is left aligned */
+  /*display: flex;*/
+  border-radius: 8px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  text-align: left; /* ensure text is left aligned */
 
-    width: 40%;
-    height: auto; /* Auto height instead of fixed percentage */
+  width: 40%;
+  height: auto; /* Auto height instead of fixed percentage */
 
 }
+
+
+.infoBlurbFundraising {
+
+  /*width: 45%; /* Adjust width to fit content */
+  /*max-width: 500px; /* Limit width */
+
+  padding: 15px;
+  background: #fff;
+  /*display: flex;*/
+  border-radius: 8px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  text-align: left; /* ensure text is left aligned */
+
+  width: 40%;
+  height: auto; /* Auto height instead of fixed percentage */
+
+}
+
+
 
 .outreachPhotos {
   width: 45%; /* Make sure the image section takes up the same amount of space */
@@ -217,7 +246,19 @@ img:not(hover){
   padding-left: 20px; /* add padding for alignment */
 }
 
+.infoBlurbFundraising ul{
+  list-style: none;
+  padding-left: 20px; /* add padding for alignment */
+}
+
 .infoBlurbOutreach li{
+  font-size: 1.1em;
+  padding: 8px 0;
+  /*border-bottom: 1px solid #eee;*/
+  font-family: 'Roboto', sans-serif;
+}
+
+.infoBlurbFundraising li{
   font-size: 1.1em;
   padding: 8px 0;
   /*border-bottom: 1px solid #eee;*/
@@ -230,6 +271,11 @@ img:not(hover){
   text-align: center;
 }
 
+.infoBlurbFundraising h3{
+  color: #000;
+  margin-bottom: 15px;
+  text-align: center;
+}
 
 
 .team li {
@@ -254,15 +300,12 @@ hr {
 }
 
 hr.sectionDivider{
-
     border: none;
     height: 5px;
     background: #FFFFFF;
     width: 80%;
     margin: 20px auto;
-
     border-radius: 7px;
-
 }
 
 testTitle {
