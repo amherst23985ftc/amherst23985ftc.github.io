@@ -138,14 +138,29 @@ headerInfoTxt {
   margin-bottom: 10px;
 }
 
-.outreachPhotos img {
-  width: 100%; /* Makes images fill the width of their container */
-  /*max-width: 200px; /* Limits the size */
+.outreachPhotos img2 {
+  width: 50%; /* Makes images fill the width of their container */
+
+  max-width: 200px; /* Limits the size */
+
   height: auto; /* Keeps aspect ratio */
   border-radius: 8px; /* Optional: rounded corners */
   box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Optional: adds a slight shadow */
 
 }
+
+
+
+.outreachPhotos img {
+  max-width: 200px; /* Maximum width */
+  max-height: 150px; /* Maximum height to prevent overly tall images */
+  width: auto; /* Ensures width scales properly */
+  height: auto; /* Ensures height scales properly */
+  object-fit: contain; /* Keeps the entire image visible without cropping */
+  border-radius: 8px; /* Optional: rounded corners */
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Optional: adds a slight shadow */
+}
+
 
 img:hover{
     width: 200%;
