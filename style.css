@@ -366,3 +366,14 @@ h1, h2 {
   margin: 0; /* Remove default margin to prevent spacing issues */
 }
 
+.gfm-embed {
+  max-width: 300px; /* Adjust width as needed */
+  max-height: 400px; /* Adjust height to fit the widget properly */
+  width: 100%; /* Makes it responsive */
+  margin: 0 auto; /* Centers the widget */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden; /* Prevents extra white space */
+}
+
