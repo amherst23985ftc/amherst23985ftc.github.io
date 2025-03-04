@@ -377,3 +377,9 @@ h1, h2 {
   overflow: hidden; /* Prevents extra white space */
 }
 
+.gfm-container {
+  width: 100%;
+  max-width: 300px; /* Adjust as needed */
+  margin: 0 auto;
+}
+
