@@ -140,30 +140,28 @@ headerInfoTxt {
 
 .outreachPhotos img {
   width: 100%; /* Makes images fill the width of their container */
-  max-width: 200px; /* Limits the size */
+  /*max-width: 200px; /* Limits the size */
   height: auto; /* Keeps aspect ratio */
   border-radius: 8px; /* Optional: rounded corners */
   box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Optional: adds a slight shadow */
 
 }
 
-.outreachPhotos img2 {
-  width: 100%; /* Makes images fill the width of their container */
-  max-width: 200px; /* Limits the size */
-  height: auto; /* Keeps aspect ratio */
-  border-radius: 8px; /* Optional: rounded corners */
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Optional: adds a slight shadow */
+img:hover{
+    width: 200%;
+    height: auto;
+
+    transition: width 100ms linear, height 100ms linear;
+}
+
+img:not(hover){
+        width: 100%;
+        height: auto;
+
+        transition: width 100ms linear, height 100ms linear;
 
 }
 
-.outreachPhotos img3
-  width: 100%; /* Makes images fill the width of their container */
-  max-width: 200px; /* Limits the size */
-  height: auto; /* Keeps aspect ratio */
-  border-radius: 8px; /* Optional: rounded corners */
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Optional: adds a slight shadow */
-
-}
 
 /*
 .team:hover {
