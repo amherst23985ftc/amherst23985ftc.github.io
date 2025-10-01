@@ -24,8 +24,8 @@ body {
 
 /* Centered container for content */
 .container {
-  max-width: 80%;
-  width: 85%;
+  max-width: 90%;
+  width: 95%;
   margin: 0 auto;
   background: #670d23;
   border-radius: 10px;
