@@ -115,7 +115,7 @@ headerInfoTxt {
   display: flex; /* Makes .infoBlurbOutreach and .outreachPhotos sit next to each other */
   justify-content: space-between; /* Even spacing */
   align-items: center; /* Aligns items to the top */
-  gap: 20px; /* Adds space between the text and images */
+  gap: 10px; /* Adds space between the text and images */
   width: 100%; /* Ensures full width */
 }
 
@@ -167,8 +167,8 @@ headerInfoTxt {
 
 
 .outreachPhotos {
-  width: 45%; /* Make sure the image section takes up the same amount of space */
-  max-width: 500px; /* Set a max width */
+  width: 50%; /* Make sure the image section takes up the same amount of space */
+  max-width: 550px; /* Set a max width */
   display: flex;
   flex-wrap: wrap; /* Allows images to wrap to the next row if necessary */
   justify-content: center; /* Centers images inside */
