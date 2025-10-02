@@ -101,6 +101,15 @@ headerInfoTxt {
   text-align: left; /* ensure text is left aligned */
 }
 
+.oldMembers {
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  text-align: left; /* ensure text is left aligned */
+}
+
 
 .outreachContainer {
   display: flex; /* Makes .infoBlurbOutreach and .outreachPhotos sit next to each other */
@@ -244,6 +253,7 @@ img:not(:hover){
 
 
 }
+
 
 .team:not(:hover){
   
