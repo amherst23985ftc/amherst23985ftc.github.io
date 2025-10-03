@@ -43,15 +43,19 @@
               .then(res => res.text())
               .then(csv => {
                 const lines = csv.split("\n").filter(line => line.trim() !== "");
-                const ul = document.getElementById("data");
-                ul.innerHTML = ""; // clear "Loading..."
+                const rows = lines.slice(1); // skip header row
 
-                lines.forEach(line => {
+                const ul = document.getElementById("data");
+                ul.innerHTML = "";
+
+                rows.forEach(line => {
+                  const [date, event, location] = line.split(",");
                   const li = document.createElement("li");
-                  li.textContent = line;
+                  li.textContent = `${date} — ${event} @ ${location}`;
                   ul.appendChild(li);
                 });
               });
+
           </script>
         </section>
 
