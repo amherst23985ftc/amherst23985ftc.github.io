@@ -44,18 +44,25 @@
               .then(csv => {
                 const lines = csv.split("\n").filter(line => line.trim() !== "");
                 const rows = lines.slice(1); // skip header row
-
                 const ul = document.getElementById("data");
-                ul.innerHTML = "";
+                ul.innerHTML = ""; // clear "Loading..."
 
+                if (rows.length === 0) {
+                  // if no data
+                  const li = document.createElement("li");
+                  li.textContent = "Nothing Upcoming";
+                  ul.appendChild(li);
+                  return;
+                }
+
+                //loop and add each event if theres data
                 rows.forEach(line => {
                   const [date, event, location] = line.split(",");
                   const li = document.createElement("li");
-                  li.textContent = `${date} — ${event} at ${location}`;
+                  li.textContent = `${date} — ${event} @ ${location}`;
                   ul.appendChild(li);
                 });
               });
-
           </script>
         </section>
 
