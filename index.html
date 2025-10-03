@@ -39,7 +39,7 @@
           </ul>
 
           <script>
-            fetch("https://docs.google.com/spreadsheets/d/e/2PACX-1vSVcoq4jQsBCntfHItR7B0fWuuX33dyI5EiQ07THy4pLCZDJFKNUjkX72eBwecAKdYxDVoNalQ_HfPw/pub?output=csv")
+            fetch("https://docs.google.com/spreadsheets/d/e/2PACX-1vSuQkVioXnZtlwyzqHFMSeJoFxw9b81spdBs9BE9UGj-OXioGidZb7bUzi6YVqMUIvkAYhKPMe5RHvS/pub?output=csv")
               .then(res => res.text())
               .then(csv => {
                 const lines = csv.split("\n").filter(line => line.trim() !== "");
