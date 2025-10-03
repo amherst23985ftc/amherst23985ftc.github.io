@@ -34,26 +34,26 @@
         <section class="outreachFutureDates">
           <h3>Upcoming:</h3>
           <hr>
-          <ul>
-            <!---
-            <div id="events">
-              <h2>Upcoming Outreach Events</h2>
-              <p>Loading events...</p>
-            </div>
-            -->
-
-            <script>
-              fetch("https://docs.google.com/spreadsheets/d/e/2PACX-1vQnWXEfwPh9SmhgZTBQaPEtMiqm4b2DXD39WtDnUrVSzzStfU5tcQ81EN5TACr8-JJjATait_0v5caM/pub?output=csv")
-                .then(res => res.text())
-                .then(csv => {
-                  document.getElementById("data").textContent = csv;
-                });
-            </script>
-
+          <ul id="data">
+            <li>Loading events...</li>
           </ul>
+
+          <script>
+            fetch("https://docs.google.com/spreadsheets/d/e/2PACX-1vQnWXEfwPh9SmhgZTBQaPEtMiqm4b2DXD39WtDnUrVSzzStfU5tcQ81EN5TACr8-JJjATait_0v5caM/pub?output=csv")
+              .then(res => res.text())
+              .then(csv => {
+                const lines = csv.split("\n").filter(line => line.trim() !== "");
+                const ul = document.getElementById("data");
+                ul.innerHTML = ""; // clear "Loading..."
+
+                lines.forEach(line => {
+                  const li = document.createElement("li");
+                  li.textContent = line;
+                  ul.appendChild(li);
+                });
+              });
+          </script>
         </section>
-
-
 
         <section class="outreachPhotos">
           <img src="outreach/blockCode2.png" alt="blockCodeDemo" class="img">
