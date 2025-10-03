@@ -41,27 +41,30 @@
               <p>Loading events...</p>
             </div>
             -->
-            
+
             <script>
               async function loadEvents() {
                 const sheetId = "1wLU4eVqzSmH-N0yA1gvj57GyShFKgUzTuoCXrjjJWcQ";
-                const url = `https://spreadsheets.google.com/feeds/list/${sheetId}/od6/public/values?alt=json`;
+                const url = `https://docs.google.com/spreadsheets/d/${sheetId}/gviz/tq?tqx=out:json`;
 
                 try {
                   const response = await fetch(url);
-                  const data = await response.json();
+                  const text = await response.text();
+
+                  // Google wraps the JSON in some extra text, so we strip it out
+                  const json = JSON.parse(text.substring(47, text.length - 2));
+                  const rows = json.table.rows;
 
                   let html = "<ul>";
-                  data.feed.entry.forEach(e => {
-                    const date = e.gsx$date?.$t || "";
-                    const event = e.gsx$event?.$t || "";
-                    const location = e.gsx$location?.$t || "";
+                  rows.forEach(row => {
+                    const date = row.c[0]?.v || "";      // column A
+                    const event = row.c[1]?.v || "";     // column B
+                    const location = row.c[2]?.v || "";  // column C
                     html += `<li><strong>${date}</strong>: ${event} <em>${location}</em></li>`;
                   });
                   html += "</ul>";
 
                   document.getElementById("events").innerHTML = "<h2>Upcoming Outreach Events</h2>" + html;
-
                 } catch (err) {
                   document.getElementById("events").innerHTML = "<p>Could not load events. Check the sheet link.</p>";
                   console.error(err);
