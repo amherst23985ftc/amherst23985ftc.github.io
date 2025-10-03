@@ -240,7 +240,7 @@ headerInfoTxt {
   box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Optional: adds a slight shadow */
 }
 
-
+/*
 img:hover{
     width: 100%;
     height: auto;
@@ -259,7 +259,7 @@ img:not(:hover){
     transition: width 100ms linear, height 100ms linear;
 
 }
-
+*/
 
 /*
 .team:hover {

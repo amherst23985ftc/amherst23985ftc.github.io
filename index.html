@@ -51,7 +51,7 @@
                 rows.forEach(line => {
                   const [date, event, location] = line.split(",");
                   const li = document.createElement("li");
-                  li.textContent = `${date} — ${event} @ ${location}`;
+                  li.textContent = `${date} — ${event} at ${location}`;
                   ul.appendChild(li);
                 });
               });
