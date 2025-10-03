@@ -301,6 +301,12 @@ img:not(:hover){
   padding-left: 20px; /* add padding for alignment */
 }
 
+.outreachFutureDates h3{
+  color: #000;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
 
 .team h3 {
   color: #000;

@@ -35,8 +35,42 @@
           <h3>Upcoming:</h3>
           <hr>
           <ul>
-            <li>Weekday Month Date: Activity, Location</li>
-            <li>Weekday Month Date: Activity, Location</li>
+            <!---
+            <div id="events">
+              <h2>Upcoming Outreach Events</h2>
+              <p>Loading events...</p>
+            </div>
+            -->
+            
+            <script>
+              async function loadEvents() {
+                const sheetId = "1wLU4eVqzSmH-N0yA1gvj57GyShFKgUzTuoCXrjjJWcQ";
+                const url = `https://spreadsheets.google.com/feeds/list/${sheetId}/od6/public/values?alt=json`;
+
+                try {
+                  const response = await fetch(url);
+                  const data = await response.json();
+
+                  let html = "<ul>";
+                  data.feed.entry.forEach(e => {
+                    const date = e.gsx$date?.$t || "";
+                    const event = e.gsx$event?.$t || "";
+                    const location = e.gsx$location?.$t || "";
+                    html += `<li><strong>${date}</strong>: ${event} <em>${location}</em></li>`;
+                  });
+                  html += "</ul>";
+
+                  document.getElementById("events").innerHTML = "<h2>Upcoming Outreach Events</h2>" + html;
+
+                } catch (err) {
+                  document.getElementById("events").innerHTML = "<p>Could not load events. Check the sheet link.</p>";
+                  console.error(err);
+                }
+              }
+
+              loadEvents();
+            </script>
+
           </ul>
         </section>
 
